@@ -1,0 +1,121 @@
+.formulario-main {
+	display: block;
+	width: min(100% - 32px, 760px);
+	margin: 0 auto;
+	padding: 32px 16px 48px;
+	color: #354024;
+}
+
+.formulario-main h2 {
+	margin: 0 0 24px;
+	color: #4C3D19;
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 28px;
+}
+
+.formulario-main form {
+	display: grid;
+	gap: 18px;
+}
+
+.formulario-main fieldset {
+	min-width: 0;
+	margin: 0;
+	padding: 20px 24px;
+	border: 2px solid #CFBB99;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-main legend {
+	padding: 0 10px;
+	color: #4C3D19;
+	font-family: Georgia, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.formulario-main fieldset p {
+	margin: 12px 0;
+}
+
+.formulario-main label {
+	display: inline-block;
+	margin-right: 8px;
+	color: #354024;
+	font-weight: bold;
+}
+
+.formulario-main .aficiones-titulo {
+	color: #354024;
+	font-weight: bold;
+}
+
+.formulario-main input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+	box-sizing: border-box;
+	max-width: 100%;
+	min-height: 40px;
+	padding: 8px 10px;
+	border: 1px solid #A3B18A;
+	border-radius: 5px;
+	background-color: #F8F6F1;
+	color: #1A2012;
+	font: inherit;
+}
+
+.formulario-main input:focus-visible {
+	outline: 3px solid #889063;
+	outline-offset: 2px;
+}
+
+.formulario-main input[type="checkbox"],
+.formulario-main input[type="radio"] {
+	accent-color: #354024;
+}
+
+.formulario-main input[type="submit"],
+.formulario-main input[type="reset"] {
+	min-height: 42px;
+	margin: 4px 8px 4px 0;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 6px;
+	background-color: #354024;
+	color: #E5F7C4;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.formulario-main input[type="reset"] {
+	background-color: #7F5539;
+	color: #F4F1DE;
+}
+
+.formulario-main input[type="submit"]:hover,
+.formulario-main input[type="submit"]:focus-visible {
+	background-color: #6B705C;
+}
+
+.formulario-main input[type="reset"]:hover,
+.formulario-main input[type="reset"]:focus-visible {
+	background-color: #4C3D19;
+}
+
+@media (max-width: 600px) {
+	.formulario-main {
+		width: auto;
+		padding: 24px 16px 36px;
+	}
+
+	.formulario-main fieldset {
+		padding: 16px;
+	}
+
+	.formulario-main label {
+		margin-bottom: 6px;
+	}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1.3 | Tema 1</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="CUERPO">
+    <header class="CABECERA">
+        <h1>Ejercicio 1.3</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Formulario.html">Formulario</a></li>
+                <li><a href="../Horario.html">Horario</a></li>
+                <li class="MENU-ACTIVIDADES">
+                    <details class="MENU-DESPLEGABLE" id="actividades" open>
+                        <summary>Actividades</summary>
+                        <ul class="MENU-SUBMENU">
+                            <li>
+                                <details class="MENU-DESPLEGABLE" open>
+                                    <summary>Tema 1</summary>
+                                    <ul class="MENU-SUBMENU">
+                                        <li>
+                                            <details class="MENU-DESPLEGABLE" open>
+                                                <summary>Apartado 1</summary>
+                                                <ul class="MENU-SUBMENU">
+                                                    <li><a href="Ejercicio1.1.html">Ejercicio 1.1</a></li>
+                                                    <li><a href="Ejercicio1.2.html">Ejercicio 1.2</a></li>
+                                                    <li><a href="Ejercicio1.3.html" aria-current="page">Ejercicio 1.3</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details class="MENU-DESPLEGABLE">
+                                                <summary>Apartado 2</summary>
+                                                <ul class="MENU-SUBMENU">
+                                                    <li><a href="Ejercicio2.1.html">Ejercicio 2.1</a></li>
+                                                    <li><a href="Ejercicio2.2.html">Ejercicio 2.2</a></li>
+                                                    <li><a href="Ejercicio2.3.html">Ejercicio 2.3</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details class="MENU-DESPLEGABLE">
+                                    <summary>Actividades Extras</summary>
+                                    <ul class="MENU-SUBMENU">
+                                        <li><a href="CALCULADORA/calculadora.html">Calculadora</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="EJERCICIO-13">
+        <table class="TABLA-PRUEBA-1">
+            <caption>Tabla prueba 1</caption>
+            <thead>
+                <tr>
+                    <th>columna 1</th>
+                    <th>columna 2</th>
+                    <th>columna 3</th>
+                    <th>columna 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>col1</td>
+                    <td colspan="2">col2</td>
+                    <td rowspan="2">col3</td>
+                </tr>
+                <tr>
+                    <td>colum1</td>
+                    <td>colum2</td>
+                    <td>colum4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="TABLA-PRUEBA-2">
+            <caption>Tabla prueba 2</caption>
+            <thead>
+                <tr>
+                    <th>columna 1</th>
+                    <th>columna 2</th>
+                    <th>columna 3</th>
+                    <th>columna 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="FILA-VERDE">
+                    <td>col1</td>
+                    <td colspan="2">col2</td>
+                    <td>col3</td>
+                </tr>
+                <tr>
+                    <td>colum1</td>
+                    <td rowspan="2">colum2</td>
+                    <td>colum3</td>
+                    <td>colum4</td>
+                </tr>
+                <tr class="FILA-VERDE">
+                    <td>column1</td>
+                    <td>column3</td>
+                    <td>column4</td>
+                </tr>
+                <tr>
+                    <td>colu1</td>
+                    <td>colu2</td>
+                    <td>colu3</td>
+                    <td>colu4</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

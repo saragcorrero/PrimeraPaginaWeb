@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <script src="./calculadora.js"></script>
+
+    </head>
+    <body class="CUERPO">
+        <header class="CABECERA">
+            <h1>Calculadora</h1>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../Formulario.html">Formulario</a></li>
+                    <li><a href="../../Horario.html">Horario</a></li>
+                    <li class="MENU-ACTIVIDADES">
+                        <details class="MENU-DESPLEGABLE" id="actividades" open>
+                            <summary>Actividades</summary>
+                            <ul class="MENU-SUBMENU">
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Tema 1</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 1</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="../Ejercicio1.1.html">Ejercicio 1.1</a></li>
+                                                        <li><a href="../Ejercicio1.2.html">Ejercicio 1.2</a></li>
+                                                        <li><a href="../Ejercicio1.3.html">Ejercicio 1.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 2</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="../Ejercicio2.1.html">Ejercicio 2.1</a></li>
+                                                        <li><a href="../Ejercicio2.2.html">Ejercicio 2.2</a></li>
+                                                        <li><a href="../Ejercicio2.3.html">Ejercicio 2.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Actividades Extras</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li><a href="calculadora.html">Calculadora</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="CALCULADORA-CONTENIDO">
+        <table class="CALCULADORA">
+            <thead>
+                <tr>
+                    <th colspan="4"><input type="text" id="pantalla" value="0" readonly></th>
+                </tr>
+            <tbody>
+                <tr>
+                    <th colspan="4"><button onclick="borrar()">C</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="escribir('7')">7</button></th>
+                    <th><button onclick="escribir('8')">8</button></th>
+                    <th><button onclick="escribir('9')">9</button></th>
+                    <th><button onclick="escribir('/')">/</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="escribir('4')">4</button></th>
+                    <th><button onclick="escribir('5')">5</button></th>
+                    <th><button onclick="escribir('6')">6</button></th>
+                    <th><button onclick="escribir('*')">*</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="escribir('1')">1</button></th>
+                    <th><button onclick="escribir('2')">2</button></th>
+                    <th><button onclick="escribir('3')">3</button></th>
+                    <th><button onclick="escribir('-')">-</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="escribir('0')">0</button></th>
+                    <th><button onclick="calcular()">=</button></th>
+                    <th><button onclick="escribir('.')">.</button></th>
+                    <th><button onclick="escribir('+')">+</button></th>
+                </tr>
+            
+            </tbody>
+        </table>
+        </main>
+    </body>
+
+</html>

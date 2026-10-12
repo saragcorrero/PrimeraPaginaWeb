@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/estiloform.css">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body class="CUERPO">
+        <header class="CABECERA">
+            <h1>Formulario</h1>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Formulario.html" aria-current="page">Formulario</a></li>
+                    <li><a href="Horario.html">Horario</a></li>
+                    <li class="MENU-ACTIVIDADES">
+                        <details class="MENU-DESPLEGABLE" id="actividades" open>
+                            <summary>Actividades</summary>
+                            <ul class="MENU-SUBMENU">
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Tema 1</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 1</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="actividades/Ejercicio1.1.html">Ejercicio 1.1</a></li>
+                                                        <li><a href="actividades/Ejercicio1.2.html">Ejercicio 1.2</a></li>
+                                                        <li><a href="actividades/Ejercicio1.3.html">Ejercicio 1.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 2</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="actividades/Ejercicio2.1.html">Ejercicio 2.1</a></li>
+                                                        <li><a href="actividades/Ejercicio2.2.html">Ejercicio 2.2</a></li>
+                                                        <li><a href="actividades/Ejercicio2.3.html">Ejercicio 2.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Actividades Extras</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li><a href="actividades/CALCULADORA/calculadora.html">Calculadora</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="formulario-main">
+            <h2>Formulario</h2>
+            <form>
+                <fieldset>
+                    <legend>Preguntas de formulario</legend>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                    </p>
+                    <p>
+                        <label for="Apellidos">Apellidos:</label>
+                        <input type="text" id="Apellidos" name="Apellidos" required><br><br>
+                    </p>
+                    <p>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="pass" required><br><br>
+                    </p>
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required><br><br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fechas y horas</legend>
+                    <p>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required><br><br>
+                    </p>
+                    <p>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required><br><br>
+                    </p>
+                    <p>
+                        <label for="fechahora">Fecha y hora:</label>
+                        <input type="datetime-local" id="fechahora" name="fechahora" required><br><br>
+                    </p>
+                    <p>
+                        <label for="mes">Mes:</label>
+                        <input type="month" id="mes" name="mes" required><br><br>
+                    </p>
+                    <p>
+                        <label for="semana">Semana:</label>
+                        <input type="week" id="semana" name="semana" required><br><br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                     <legend>Edad</legend>
+                    <p>
+                            <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="0" required><br><br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                     <legend>Favoritos</legend>
+                    <p>
+                            <label for="color">Color:</label>
+                        <input type="color" id="color" name="color" required><br><br>
+                    </p>
+                    <p class="aficiones-titulo">Selecciona tus aficiones:</p>
+                            <label for="deportes">Deportes:</label>
+                        <input type="checkbox" id="deportes" name="deportes" required><br><br>
+                            <label for="musica">Música:</label>
+                        <input type="checkbox" id="musica" name="musica" required><br><br>
+                            <label for="lectura">Lectura:</label>
+                        <input type="checkbox" id="lectura" name="lectura" required><br><br>
+                         <label for="informatica">Informática:</label>
+                        <input type="checkbox" id="informatica" name="informatica" required><br><br>
+                </fieldset>
+                <fieldset>
+                     <legend>Asigntatura favorita</legend>
+                    <p>
+                            <label for="radio">Lenguaje de Marcas:</label>
+                        <input type="radio" id="radio" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio2">Programación:</label>
+                        <input type="radio" id="radio2" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio3">Base de Datos:</label>
+                        <input type="radio" id="radio3" name="radio" required><br><br>
+                    </p>
+                     <p>
+                            <label for="radio4">IPE:</label>
+                        <input type="radio" id="radio4" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio5">Sistemas Informáticos:</label>
+                        <input type="radio" id="radio5" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio6">Entornos de Desarrollo:</label>
+                        <input type="radio" id="radio6" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio7">Proyecto Intermodular:</label>
+                        <input type="radio" id="radio7" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio8">Inglés:</label>
+                        <input type="radio" id="radio8" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio9">Digitalización:</label>
+                        <input type="radio" id="radio9" name="radio" required><br><br>
+                    </p>
+                    <p>
+                            <label for="radio10">Sostenibilidad:</label>
+                        <input type="radio" id="radio10" name="radio" required><br><br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                     <legend>Botones</legend>
+                    <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
