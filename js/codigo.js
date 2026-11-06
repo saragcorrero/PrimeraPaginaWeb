@@ -17,17 +17,17 @@ alert(mensaje);
 function foo() {
     var x = 10;
     if (true) {
-        var x = 20;  // misma variable!
-        console.log(x);  // 20
+        var x = 20;  
+        console.log(x);  
     }
-    console.log(x);  // 20
+    console.log(x);  
 }
 
 function bar() {
     let y = 10;
     if (true) {
-        let y = 20;  // variable diferente
-        console.log(y);  // 20
+        let y = 20;  
+        console.log(y);  
     }
-    console.log(y);  // 10
+    console.log(y);  
 }

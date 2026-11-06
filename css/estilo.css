@@ -629,6 +629,30 @@
 	font-weight: bold;
 }
 
+.OPCIONES_JUEGO {
+	display: inline-block;
+	padding: 12px 14px;
+	background-color: #CFBB99;
+	color: #4C3D19;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 400px;
+	border: 2px solid #908152;
+	border-radius: 8px;
+}
+
+.BOTONES_JUEGO {
+	display: inline-block;
+	padding: 12px 14px;
+	background-color: #ebe8d4;
+	color: #908152;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 4px;
+	border: 2px solid #4a4638;
+}
+
+
 @media (max-width: 600px) {
 	.CABECERA {
 		justify-content: center;

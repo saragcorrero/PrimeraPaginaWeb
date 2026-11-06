@@ -1,17 +1,37 @@
-let jugador = "piedra";
-let maquina = "papel";
+let partidas = 0;
+let victorias = 0;
+let empates = 0;
+let derrotas = 0;
 
-let mensaje;
+function juego(jugador) {
+  const opciones = ["piedra", "papel", "tijera"];
+  const maquina = opciones[Math.floor(Math.random() * opciones.length)];
+  let mensaje;
 
-if (jugador === maquina) {
+  partidas++;
+
+  if (jugador === maquina) {
     mensaje = "Empate";
-} else if (jugador === "piedra" && maquina === "tijera") {
+    empates++;
+  } else if (
+    (jugador === "piedra" && maquina === "tijera") ||
+    (jugador === "papel" && maquina === "piedra") ||
+    (jugador === "tijera" && maquina === "papel")
+  ) {
     mensaje = "Ganaste";
-} else if (jugador === "papel" && maquina === "piedra") {
-    mensaje = "Ganaste";
-} else if (jugador === "tijera" && maquina === "papel") {
-    mensaje = "Ganaste";
-} else {
+    victorias++;
+  } else {
     mensaje = "Perdiste";
+    derrotas++;
+  }
+  document.getElementById("jugada-jugador").textContent =
+    `Tu jugada es: ${jugador}`;
+  document.getElementById("jugada-maquina").textContent =
+    `La jugada de la máquina es: ${maquina}`;
+  document.getElementById("mensaje").textContent = mensaje;
+
+  document.getElementById("marcador").textContent = `Partidas: ${partidas}`;
+  document.getElementById("victorias").textContent = `Victorias: ${victorias}`;
+  document.getElementById("empates").textContent = `Empates: ${empates}`;
+  document.getElementById("derrotas").textContent = `Derrotas: ${derrotas}`;
 }
-console.log(mensaje);
