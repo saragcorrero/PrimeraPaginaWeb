@@ -1,21 +1,199 @@
-header, footer, header {
-    color: white;
-    background: black;
-    background-color: black;
+body.MODO-OSCURO {
+    background: #111827;
+    color: #e5e7eb;
+    color-scheme: dark;
 }
 
-button {
-
-    background-color:rgb(9, 9, 9) ;
-    border: 1px solid #555;
-    color: white;
+body.MODO-OSCURO .CABECERA {
+    border-bottom: 1px solid #475569;
+    background: linear-gradient(120deg, #1e293b, #26364a);
+    color: #f8fafc;
 }
 
-body {
-    background-color: black;
-    background: rgb(46, 46, 46);
+body.MODO-OSCURO .CABECERA H1,
+body.MODO-OSCURO H1,
+body.MODO-OSCURO H2,
+body.MODO-OSCURO .formulario-main h2,
+body.MODO-OSCURO .formulario-main legend {
+    color: #f1f5f9;
 }
 
-h1 {
-    color: white;
+body.MODO-OSCURO .CABECERA NAV A,
+body.MODO-OSCURO .CABECERA NAV SUMMARY {
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .CABECERA NAV A[ARIA-CURRENT="page"] {
+    background-color: #365044;
+    color: #ecfdf5;
+}
+
+body.MODO-OSCURO .CABECERA NAV A:HOVER,
+body.MODO-OSCURO .CABECERA NAV A:FOCUS-VISIBLE,
+body.MODO-OSCURO .CABECERA NAV SUMMARY:HOVER,
+body.MODO-OSCURO .CABECERA NAV SUMMARY:FOCUS-VISIBLE {
+    background-color: #475569;
+    color: #fff;
+}
+
+body.MODO-OSCURO .MENU-SUBMENU {
+    border-color: #475569;
+    background-color: #1e293b;
+}
+
+body.MODO-OSCURO .MENU-SUBMENU A {
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .MENU-SUBMENU A:HOVER,
+body.MODO-OSCURO .MENU-SUBMENU A:FOCUS-VISIBLE {
+    background-color: #334155;
+    color: #fff;
+}
+
+body.MODO-OSCURO .PRESENTACION,
+body.MODO-OSCURO .MODULOS,
+body.MODO-OSCURO .TARJETA-JUEGO,
+body.MODO-OSCURO .EJERCICIO-11,
+body.MODO-OSCURO .PAGINA-PRUEBA,
+body.MODO-OSCURO .formulario-main fieldset,
+body.MODO-OSCURO .CALCULADORA {
+    border-color: #475569;
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .PRESENTACION,
+body.MODO-OSCURO .MODULOS,
+body.MODO-OSCURO .formulario-main,
+body.MODO-OSCURO .formulario-main label,
+body.MODO-OSCURO .formulario-main .aficiones-titulo {
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .LISTA-MODULOS LI,
+body.MODO-OSCURO .MARCADOR-JUEGO P {
+    background-color: #334155;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .RESULTADO-JUEGO {
+    background-color: #26364a;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .CALCULADORA #pantalla,
+body.MODO-OSCURO .formulario-main input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+    border-color: #64748b;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO .CALCULADORA BUTTON,
+body.MODO-OSCURO .BOTONES_JUEGO {
+    border-color: #64748b;
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO .CALCULADORA BUTTON:HOVER,
+body.MODO-OSCURO .CALCULADORA BUTTON:FOCUS-VISIBLE,
+body.MODO-OSCURO .BOTONES_JUEGO:HOVER,
+body.MODO-OSCURO .BOTONES_JUEGO:FOCUS-VISIBLE {
+    background-color: #3d6652;
+    color: #fff;
+}
+
+body.MODO-OSCURO .formulario-main input[type="submit"],
+body.MODO-OSCURO .formulario-main input[type="reset"] {
+    background-color: #365044;
+    color: #f0fdf4;
+}
+
+body.MODO-OSCURO .TABLA,
+body.MODO-OSCURO .TABLA TH,
+body.MODO-OSCURO .TABLA TD {
+    border-color: #475569;
+}
+
+body.MODO-OSCURO .TABLA THEAD TH {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO .TABLA TD {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .TABLA .HORA {
+    background-color: #26364a;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO .PIE {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .EJERCICIO-23 {
+    border-left-color: #64748b;
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .BLOQUE-SPAN {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO a {
+    color: #a7f3d0;
+}
+
+body.MODO-OSCURO a:focus-visible,
+body.MODO-OSCURO button:focus-visible,
+body.MODO-OSCURO input:focus-visible {
+    outline-color: #6ee7b7;
+}
+
+.BOTON-TEMA {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 20;
+    min-height: 48px;
+    padding: 0 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    background: linear-gradient(135deg, #354024, #6B705C);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
+    color: #fff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.BOTON-TEMA:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.32);
+}
+
+.BOTON-TEMA:focus-visible {
+    outline: 3px solid #a7f3d0;
+    outline-offset: 3px;
+}
+
+body.MODO-OSCURO .BOTON-TEMA {
+    background: linear-gradient(135deg, #365044, #26364a);
+}
+
+@media (max-width: 600px) {
+    .BOTON-TEMA {
+        right: 14px;
+        bottom: 14px;
+        min-height: 44px;
+        padding: 0 15px;
+    }
 }

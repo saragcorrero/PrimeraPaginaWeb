@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link id="tema-claro" rel="stylesheet" href="../css/estilo.css"/>
-    <link id="tema-oscuro" rel="stylesheet" href="../css/oscuro.css" disabled/>
-    <script src="../js/cambiarmodo.js"></script>
+    <title>Modo de visualización</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/oscuro.css">
+    <script src="../js/cambiarmodo.js" defer></script>
 </head>
 
-<body>
-    <header></header>
-    <h1>Bienvenido a mi WEb</h1>
-    <main>
-        <button onclick="cambiarmodo()">Modo oscuro/claro</button>
+<body class="CUERPO">
+    <header class="CABECERA">
+        <h1>Modo de visualización</h1>
+    </header>
+    <main class="INICIO">
+        <section class="PRESENTACION">
+            <h2>Elige tu modo</h2>
+            <p>Usa el botón de la esquina inferior para cambiar entre el modo claro y el modo oscuro.</p>
+        </section>
     </main>
-    <hr>
-    <footer>
+    <footer class="PIE">
         <p>Creada por Sara</p>
     </footer>
 </body>
