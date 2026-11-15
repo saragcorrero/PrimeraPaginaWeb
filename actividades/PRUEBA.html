@@ -1,32 +1,76 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejemplo de HTML</title>
-        <script src="js/codigo.js"></script>
-
+        <link rel="stylesheet" href="../css/estilo.css">
+        <script src="../js/codigo.js"></script>
     </head>
-
-    <body>
-
-        <noscript>
-            <p> Bienvenido a nuestro sitio web</p>
-            <p>Este sitio web requiere JavaScript para funcionar correctamente.</p>
-        </noscript>
-
-        <header>
+    <body class="CUERPO">
+        <header class="CABECERA">
             <h1>Ejemplo de HTML</h1>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Formulario.html">Formulario</a></li>
+                    <li><a href="../Horario.html">Horario</a></li>
+                    <li class="MENU-ACTIVIDADES">
+                        <details class="MENU-DESPLEGABLE" id="actividades">
+                            <summary>Actividades</summary>
+                            <ul class="MENU-SUBMENU">
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Tema 1</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 1</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="Ejercicio1.1.html">Ejercicio 1.1</a></li>
+                                                        <li><a href="Ejercicio1.2.html">Ejercicio 1.2</a></li>
+                                                        <li><a href="Ejercicio1.3.html">Ejercicio 1.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details class="MENU-DESPLEGABLE">
+                                                    <summary>Apartado 2</summary>
+                                                    <ul class="MENU-SUBMENU">
+                                                        <li><a href="Ejercicio2.1.html">Ejercicio 2.1</a></li>
+                                                        <li><a href="Ejercicio2.2.html">Ejercicio 2.2</a></li>
+                                                        <li><a href="Ejercicio2.3.html">Ejercicio 2.3</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details class="MENU-DESPLEGABLE">
+                                        <summary>Otras actividades</summary>
+                                        <ul class="MENU-SUBMENU">
+                                            <li><a href="CALCULADORA/calculadora.html">Calculadora</a></li>
+                                            <li><a href="PRUEBA.html" aria-current="page">Página de prueba</a></li>
+                                            <li><a href="../TEMA3/PiedraPapelTijera.html">Piedra, papel o tijera</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
         </header>
-
-        <main>
-            <p>Este es un ejemplo de un documento HTML basico</p>
+        <main class="PAGINA-PRUEBA">
+            <noscript>
+                <p>Bienvenido a nuestro sitio web</p>
+                <p>Este sitio web requiere JavaScript para funcionar correctamente.</p>
+            </noscript>
+            <p>Este es un ejemplo de un documento HTML básico.</p>
         </main>
-
-        <footer>
+        <footer class="PIE">
             <p>Derechos reservados &copy; 2024</p>
         </footer>
-
     </body>
-
 </html>
