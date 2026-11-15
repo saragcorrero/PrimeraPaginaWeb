@@ -181,8 +181,8 @@
 }
 
 .CALCULADORA {
-	border-collapse: separate;
-	border-spacing: 8px;
+	box-sizing: border-box;
+	width: min(100%, 430px);
 	padding: 20px;
 	border: 2px solid #CFBB99;
 	border-radius: 12px;
@@ -190,9 +190,39 @@
 	box-shadow: 0 4px 12px rgba(76, 61, 25, 0.15);
 }
 
-.CALCULADORA TH {
-	padding: 0;
-	border: 0;
+.CALCULADORA-PANTALLA {
+	margin-bottom: 12px;
+	padding: 10px;
+	border: 1px solid #A3B18A;
+	border-radius: 6px;
+	background-color: #F8F6F1;
+}
+
+.CALCULADORA-ESTADO {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	min-height: 20px;
+}
+
+.INDICADOR-MEMORIA {
+	padding: 2px 6px;
+	border-radius: 4px;
+	background-color: #889063;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.CALCULADORA-OPERACION {
+	overflow: hidden;
+	margin: 0;
+	color: #6B705C;
+	font-size: 13px;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .CALCULADORA #pantalla {
@@ -204,11 +234,27 @@
 	border-radius: 6px;
 	background-color: #F8F6F1;
 	color: #354024;
-	font-size: 28px;
+	font-size: 30px;
 	text-align: right;
 }
 
+.CALCULADORA-TECLAS {
+	display: grid;
+	grid-template-columns: repeat(4, 68px);
+	justify-content: center;
+	gap: 8px;
+}
+
+.CALCULADORA-MEMORIA {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
 .CALCULADORA BUTTON {
+	min-width: 0;
 	width: 68px;
 	height: 60px;
 	border: 0;
@@ -229,6 +275,30 @@
 
 .CALCULADORA BUTTON:ACTIVE {
 	background-color: #4C3D19;
+}
+
+.CALCULADORA .TECLA-MEMORIA {
+	background-color: #E5D7C4;
+	color: #4C3D19;
+	font-size: 16px;
+}
+
+.CALCULADORA-TECLAS .TECLA-ACCION {
+	background-color: #CFBB99;
+	color: #4C3D19;
+}
+
+.CALCULADORA-TECLAS .TECLA-OPERACION {
+	background-color: #6B705C;
+	color: #fff;
+	font-size: 22px;
+}
+
+.CALCULADORA-TECLAS .TECLA-IGUAL {
+	grid-column: 4;
+	background-color: #354024;
+	color: #E5F7C4;
+	font-size: 24px;
 }
 
 .EJERCICIO-12 {
@@ -787,11 +857,6 @@
 		padding: 20px;
 	}
 
-	.CALCULADORA {
-		border-spacing: 5px;
-		padding: 12px;
-	}
-
 	.EJERCICIO-11,
 	.PAGINA-PRUEBA {
 		padding: 20px;
@@ -801,9 +866,23 @@
 		padding: 22px 16px;
 	}
 
+	.CALCULADORA {
+		padding: 12px;
+	}
+
+	.CALCULADORA-TECLAS {
+		grid-template-columns: repeat(4, 58px);
+		gap: 5px;
+	}
+
 	.CALCULADORA BUTTON {
 		width: 58px;
 		height: 54px;
+	}
+
+	.CALCULADORA-MEMORIA {
+		width: 184px;
+		gap: 5px;
 	}
 
 	.ESCENA-FLOR {

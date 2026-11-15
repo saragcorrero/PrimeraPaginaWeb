@@ -89,11 +89,36 @@ body.MODO-OSCURO .formulario-main input:not([type="checkbox"]):not([type="radio"
     color: #f8fafc;
 }
 
+body.MODO-OSCURO .CALCULADORA-PANTALLA {
+    border-color: #475569;
+    background-color: #0f172a;
+}
+
+body.MODO-OSCURO .CALCULADORA-OPERACION,
+body.MODO-OSCURO .AYUDA-CALCULADORA {
+    color: #94a3b8;
+}
+
 body.MODO-OSCURO .CALCULADORA BUTTON,
 body.MODO-OSCURO .BOTONES_JUEGO {
     border-color: #64748b;
     background-color: #334155;
     color: #f8fafc;
+}
+
+body.MODO-OSCURO .CALCULADORA-TECLAS .TECLA-ACCION,
+body.MODO-OSCURO .CALCULADORA .TECLA-MEMORIA {
+    background-color: #26364a;
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .CALCULADORA-TECLAS .TECLA-OPERACION {
+    background-color: #365044;
+    color: #fff;
+}
+
+body.MODO-OSCURO .CALCULADORA-TECLAS .TECLA-IGUAL {
+    background-color: #365044;
 }
 
 body.MODO-OSCURO .CALCULADORA BUTTON:HOVER,
