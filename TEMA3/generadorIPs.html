@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de IPs</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/generadorIPs.css">
+    <link rel="stylesheet" href="../css/oscuro.css">
+    <script src="../js/cambiarmodo.js" defer></script>
+    <script src="../js/generadorIPs.js" defer></script>
+</head>
+<body class="CUERPO">
+    <header class="CABECERA">
+        <h1>Generador de direcciones IP</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Formulario.html">Formulario</a></li>
+                <li><a href="../Horario.html">Horario</a></li>
+                <li class="MENU-ACTIVIDADES">
+                    <details class="MENU-DESPLEGABLE" id="actividades">
+                        <summary>Actividades</summary>
+                        <ul class="MENU-SUBMENU">
+                            <li>
+                                <details class="MENU-DESPLEGABLE">
+                                    <summary>Tema 1</summary>
+                                    <ul class="MENU-SUBMENU">
+                                        <li>
+                                            <details class="MENU-DESPLEGABLE">
+                                                <summary>Apartado 1</summary>
+                                                <ul class="MENU-SUBMENU">
+                                                    <li><a href="../actividades/Ejercicio1.1.html">Ejercicio 1.1</a></li>
+                                                    <li><a href="../actividades/Ejercicio1.2.html">Ejercicio 1.2</a></li>
+                                                    <li><a href="../actividades/Ejercicio1.3.html">Ejercicio 1.3</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details class="MENU-DESPLEGABLE">
+                                                <summary>Apartado 2</summary>
+                                                <ul class="MENU-SUBMENU">
+                                                    <li><a href="../actividades/Ejercicio2.1.html">Ejercicio 2.1</a></li>
+                                                    <li><a href="../actividades/Ejercicio2.2.html">Ejercicio 2.2</a></li>
+                                                    <li><a href="../actividades/Ejercicio2.3.html">Ejercicio 2.3</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details class="MENU-DESPLEGABLE">
+                                    <summary>Actividades Extras</summary>
+                                    <ul class="MENU-SUBMENU">
+                                        <li><a href="../actividades/CALCULADORA/calculadora.html">Calculadora</a></li>
+                                        <li><a href="PiedraPapelTijera.html">Piedra, papel o tijera</a></li>
+                                        <li><a href="generadorIPs.html" aria-current="page">Generador de IPs</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+            <p>Simulador de una red doméstica IPv4.</p>
+
+            <section>
+                <h2>1. Generador de direcciones IP</h2>
+                <p>Red simulada: <strong>192.168.1.0/24</strong></p>
+                <button onclick="mostrarDireccionRed()">Mostrar dirección de red</button>
+                <button onclick="mostrarPuertaEnlace()">Mostrar puerta de enlace</button>
+                <button onclick="generarIP()">Generar IP aleatoria</button>
+                <button onclick="mostrarBroadcast()">Mostrar broadcast</button>
+                <button onclick="mostrarMascara()">Mostrar máscara de subred</button>
+                <p id="ip">0.0.0.0</p>
+            </section>
+
+    </main>
+
+</body>
+</html>

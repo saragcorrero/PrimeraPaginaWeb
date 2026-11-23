@@ -1,0 +1,81 @@
+*{
+
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    text-align: center;
+    color: #354024;
+    background-color: #F4F1DE;
+    border: 1px solid #CFBB99;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.CABECERA H1 {
+    color: #4C3D19;
+}
+
+button{
+
+    margin-top: 20px;
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #889063;
+    border-radius: 8px;
+    background-color: #889063;
+    color: #1A2012;
+    cursor: pointer;
+
+}
+
+#ip{
+
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 2.5rem;
+    background-color: #F8F6F1;
+    color: #354024;
+    border: 1px solid #CFBB99;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #354024;
+    color: #E5F7C4;
+}
+
+body.MODO-OSCURO .contenedor {
+    background-color: #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.MODO-OSCURO .contenedor h2,
+body.MODO-OSCURO .contenedor p {
+    color: #e2e8f0;
+}
+
+body.MODO-OSCURO .contenedor button {
+    background-color: #365044;
+    color: #f8fafc;
+}
+
+body.MODO-OSCURO .contenedor button:hover {
+    background-color: #3d6652;
+}
+
+body.MODO-OSCURO #ip {
+    border-color: #475569;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
